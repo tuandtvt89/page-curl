@@ -16,6 +16,7 @@ import android.opengl.GLUtils;
 /**
  * Class implementing actual curl/page rendering.
  * 
+ * @author harism
  */
 public class CurlMesh {
 

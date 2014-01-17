@@ -10,32 +10,42 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.MeasureSpec;
+import android.widget.FrameLayout;
 
 /**
  * Simple Activity for curl testing.
  * 
  */
-public class CurlActivity extends Activity{
+public class CurlActivity extends Activity {
 
 	private CurlView mCurlView;
+	private Context context = this;
 	
-	public static Activity curlActivity;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_curl);
-        curlActivity = this;
+
 		int index = 0;
 		if (getLastNonConfigurationInstance() != null) {
 			index = (Integer) getLastNonConfigurationInstance();
 		}
-		mCurlView = (CurlView) findViewById(R.id.curl);
+		
+		FrameLayout contentPage = (FrameLayout) findViewById(R.id.contentPage);		
+		
+		//	anh.nguyenquynh
+		//mCurlView = (CurlView) findViewById(R.id.curl);
+		mCurlView = new CurlView(context, contentPage, this);
 		mCurlView.setPageProvider(new PageProvider());
 		mCurlView.setSizeChangedObserver(new SizeChangedObserver());
 		mCurlView.setCurrentIndex(index);
 		mCurlView.setBackgroundColor(0xFF202830);
+
+		FrameLayout curl = (FrameLayout) findViewById(R.id.curl);
+		curl.addView(mCurlView);
 		
+		contentPage.addView(new Page1View(context, mCurlView));
+		//	end anh.nguyenquynh
 	}
 
 	@Override
@@ -61,11 +71,13 @@ public class CurlActivity extends Activity{
 	private class PageProvider implements CurlView.PageProvider {
 
 		// Bitmap resources.
-		private int[] mBitmapIds = { R.layout.sample, R.layout.sample1};
+		
+		private int[] mBitmapIds = { R.layout.layout_page_1, R.layout.layout_page_2,
+				R.layout.layout_page_3, R.layout.layout_page_4, R.layout.layout_page_5};
 
 		@Override
 		public int getPageCount() {
-			return 2;
+			return 5;
 		}
 
 		private Bitmap loadBitmap(int width, int height, int index) {
@@ -96,6 +108,21 @@ public class CurlActivity extends Activity{
 			case 1:
 				Bitmap front1 = loadBitmap(width, height, 1);
 				page.setTexture(front1, CurlPage.SIDE_FRONT);
+				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
+				break;
+			case 2:
+				Bitmap front2 = loadBitmap(width, height, 2);
+				page.setTexture(front2, CurlPage.SIDE_FRONT);
+				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
+				break;
+			case 3:
+				Bitmap front3 = loadBitmap(width, height, 3);
+				page.setTexture(front3, CurlPage.SIDE_FRONT);
+				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
+				break;
+			case 4:
+				Bitmap front4 = loadBitmap(width, height, 4);
+				page.setTexture(front4, CurlPage.SIDE_FRONT);
 				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
 				break;
 			default:
