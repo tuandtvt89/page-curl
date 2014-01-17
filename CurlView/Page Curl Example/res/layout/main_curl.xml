@@ -3,39 +3,23 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" >
 
-    <com.rajaapps.pagecurl.CurlView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/curl"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-    </com.rajaapps.pagecurl.CurlView>
-
-    <LinearLayout
+    <FrameLayout 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical" >
+        android:id="@+id/curl">
+        
+    </FrameLayout>
+<!--     <com.rajaapps.pagecurl.CurlView -->
+<!--         xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--         android:id="@+id/curl" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" > -->
+<!--     </com.rajaapps.pagecurl.CurlView> -->
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Layout2" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@android:color/black" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
-    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/contentPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
 
 </RelativeLayout>
