@@ -10,7 +10,6 @@ import android.graphics.RectF;
  * Storage class for page textures, blend colors and possibly some other values
  * in the future.
  * 
- * @author harism
  */
 public class CurlPage {
 
