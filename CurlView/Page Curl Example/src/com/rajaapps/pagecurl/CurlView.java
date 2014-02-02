@@ -13,7 +13,6 @@ import android.view.View;
 /**
  * OpenGL ES View.
  * 
- * @author harism
  */
 public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 		CurlRenderer.Observer {

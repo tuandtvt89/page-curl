@@ -15,7 +15,6 @@ import android.view.View.MeasureSpec;
 /**
  * Simple Activity for curl testing.
  * 
- * @author harism
  */
 public class CurlActivity extends Activity {
 
@@ -61,9 +60,8 @@ public class CurlActivity extends Activity {
 	private class PageProvider implements CurlView.PageProvider {
 
 		// Bitmap resources.
-		private int[] mBitmapIds = { R.layout.sample, R.layout.sample1,
-				R.layout.sample2, R.layout.sample, R.layout.sample1,
-				R.layout.sample2 };
+		private int[] mBitmapIds = { R.layout.layout_page_1, R.layout.layout_page_2,
+				R.layout.layout_page_3, R.layout.layout_page_4, R.layout.layout_page_5};
 
 		@Override
 		public int getPageCount() {
@@ -105,31 +103,21 @@ public class CurlActivity extends Activity {
 				page.setTexture(front2, CurlPage.SIDE_FRONT);
 				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
 				break;
-			default:
-				Bitmap front3 = loadBitmap(width, height, 0);
+			case 3:
+				Bitmap front3 = loadBitmap(width, height, 3);
 				page.setTexture(front3, CurlPage.SIDE_FRONT);
 				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
 				break;
-
-			/*
-			 * // Third case is images on both sides. case 2: { Bitmap front =
-			 * loadBitmap(width, height, 1); Bitmap back = loadBitmap(width,
-			 * height, 3); page.setTexture(front, CurlPage.SIDE_FRONT);
-			 * page.setTexture(back, CurlPage.SIDE_BACK); break; } // Fourth
-			 * case is images on both sides - plus they are blend against //
-			 * separate colors. case 3: { Bitmap front = loadBitmap(width,
-			 * height, 2); Bitmap back = loadBitmap(width, height, 1);
-			 * page.setTexture(front, CurlPage.SIDE_FRONT);
-			 * page.setTexture(back, CurlPage.SIDE_BACK);
-			 * page.setColor(Color.argb(127, 170, 130, 255),
-			 * CurlPage.SIDE_FRONT); page.setColor(Color.rgb(255, 190, 150),
-			 * CurlPage.SIDE_BACK); break; } // Fifth case is same image is
-			 * assigned to front and back. In this // scenario only one texture
-			 * is used and shared for both sides. case 4: Bitmap front =
-			 * loadBitmap(width, height, 0); page.setTexture(front,
-			 * CurlPage.SIDE_BOTH); page.setColor(Color.argb(127, 255, 255,
-			 * 255), CurlPage.SIDE_BACK); break;
-			 */
+			case 4:
+				Bitmap front4 = loadBitmap(width, height, 4);
+				page.setTexture(front4, CurlPage.SIDE_FRONT);
+				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
+				break;
+			default:
+				Bitmap front5 = loadBitmap(width, height, 0);
+				page.setTexture(front5, CurlPage.SIDE_FRONT);
+				page.setColor(Color.rgb(180, 180, 180), CurlPage.SIDE_BACK);
+				break;
 			}
 		}
 
@@ -141,6 +129,7 @@ public class CurlActivity extends Activity {
 	private class SizeChangedObserver implements CurlView.SizeChangedObserver {
 		@Override
 		public void onSizeChanged(int w, int h) {
+			/*
 			if (w > h) {
 				mCurlView.setViewMode(CurlView.SHOW_TWO_PAGES);
 				mCurlView.setMargins(.1f, .05f, .1f, .05f);
@@ -148,6 +137,8 @@ public class CurlActivity extends Activity {
 				mCurlView.setViewMode(CurlView.SHOW_ONE_PAGE);
 				// mCurlView.setMargins(.1f, .1f, .1f, .1f);
 			}
+			*/
+			mCurlView.setViewMode(CurlView.SHOW_ONE_PAGE);
 		}
 	}
 

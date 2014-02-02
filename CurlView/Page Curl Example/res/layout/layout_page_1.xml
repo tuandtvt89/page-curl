@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/page1_main" />
+
+        <ImageView
+            android:id="@+id/image_bath_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="110dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn1" />
+
+        <Button
+            android:id="@+id/button_bath_room"
+            android:layout_width="225dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="110dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_lavatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn2" />
+
+        <Button
+            android:id="@+id/button_lavatory"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="245dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_closet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="360dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn3" />
+
+        <Button
+            android:id="@+id/button_closet"
+            android:layout_width="225dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="380dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="860dp"
+            android:layout_marginTop="185dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn5" />
+
+        <Button
+            android:id="@+id/button_kitchen"
+            android:layout_width="245dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="960dp"
+            android:layout_marginTop="180dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_living_stair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="772dp"
+            android:layout_marginTop="340dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn6" />
+
+        <Button
+            android:id="@+id/button_living_stair"
+            android:layout_width="285dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="952dp"
+            android:layout_marginTop="340dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="560dp"
+            android:layout_marginTop="480dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn7" />
+
+        <Button
+            android:id="@+id/button_entrance"
+            android:layout_width="245dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="960dp"
+            android:layout_marginTop="480dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/image_wamodern_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="500dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:src="@drawable/page1_btn4" />
+
+        <Button
+            android:id="@+id/button_wamodern_room"
+            android:layout_width="225dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="530dp"
+            android:alpha="0"
+            android:background="@android:color/white" />
+    </FrameLayout>
+
+</LinearLayout>

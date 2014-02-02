@@ -15,7 +15,6 @@ import android.opengl.GLU;
 /**
  * Actual renderer class.
  * 
- * @author harism
  */
 public class CurlRenderer implements GLSurfaceView.Renderer {
 
