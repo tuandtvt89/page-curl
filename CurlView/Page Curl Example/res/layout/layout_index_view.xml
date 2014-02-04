@@ -1,0 +1,179 @@
+<com.rajaapps.pagecurl.IndexViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewIndex"
+    android:layout_width="400dp"
+    android:layout_height="750dp"
+    android:layout_gravity="right"
+    android:layout_marginTop="49dp"
+    android:visibility="invisible" >
+
+    <ImageView
+        android:id="@+id/imageIndexBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/smart_mokuji" />
+
+    <ImageView
+        android:id="@+id/imageIndex1"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="142dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page1_top"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex1"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="142dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex2"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="201dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page2_kitchen"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex2"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="201dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex3"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page5_bathroom"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex3"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex4"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="319dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page7_lavatory"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex4"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="319dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex5"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="377dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page9_living_stair"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex5"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="377dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex6"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="436dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page14_entrance"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex6"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="436dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex7"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="495dp"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/page16_wamoderm"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex7"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="495dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageIndex8"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="554dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page18_closet"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIndex8"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="554dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/buttonCloseIndex"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="625dp"
+        android:alpha="0" />
+
+</com.rajaapps.pagecurl.IndexViewLayout>

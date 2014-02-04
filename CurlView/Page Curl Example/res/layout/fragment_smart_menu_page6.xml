@@ -3,6 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
    <ImageView
         android:id="@+id/page6_main"
         android:layout_width="match_parent"
@@ -15,23 +19,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="880dp"
-        android:layout_marginTop="630dp"
+        android:layout_marginTop="620dp"
         android:src="@drawable/page6_btn_hidden" />
 
     <ImageView
         android:id="@+id/imageShower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="485dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginLeft="470dp"
+        android:layout_marginTop="120dp"
         android:src="@drawable/page6_btn_shower" />
 
     <Button
         android:id="@+id/buttonShower"
         android:layout_width="237dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="575dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginLeft="560dp"
+        android:layout_marginTop="120dp"
         android:alpha="0" />
 
     <ImageView
@@ -39,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="880dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="185dp"
         android:src="@drawable/page6_btn_all_bath" />
 
     <Button
@@ -47,7 +51,7 @@
         android:layout_width="257dp"
         android:layout_height="88dp"
         android:layout_marginLeft="900dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="185dp"
         android:alpha="0" />
 
     <ImageView
@@ -86,7 +90,7 @@
         android:id="@+id/imageCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="545dp"
+        android:layout_marginLeft="530dp"
         android:layout_marginTop="230dp"
         android:src="@drawable/page6_btn_counter" />
 
@@ -94,7 +98,7 @@
         android:id="@+id/buttonCounter"
         android:layout_width="224dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="575dp"
+        android:layout_marginLeft="560dp"
         android:layout_marginTop="230dp"
         android:alpha="0" />
 
@@ -118,16 +122,16 @@
         android:id="@+id/imageFloor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="545dp"
-        android:layout_marginTop="570dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="580dp"
         android:src="@drawable/page6_btn_floor" />
 
     <Button
         android:id="@+id/buttonFloor"
         android:layout_width="265dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="545dp"
-        android:layout_marginTop="570dp"
+        android:layout_marginLeft="535dp"
+        android:layout_marginTop="580dp"
         android:alpha="0" />
 
     <ImageView
@@ -135,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="880dp"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="500dp"
         android:src="@drawable/page6_variation_of_colors_tile" />
 
     <ImageView
@@ -143,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="915dp"
-        android:layout_marginTop="515dp"
+        android:layout_marginTop="505dp"
         android:src="@drawable/page6_hyoji" />
 
     <Button
@@ -151,7 +155,7 @@
         android:layout_width="57dp"
         android:layout_height="53dp"
         android:layout_marginLeft="950dp"
-        android:layout_marginTop="415dp"
+        android:layout_marginTop="400dp"
         android:alpha="0" />
 
     <Button
@@ -159,7 +163,7 @@
         android:layout_width="55dp"
         android:layout_height="53dp"
         android:layout_marginLeft="1030dp"
-        android:layout_marginTop="415dp"
+        android:layout_marginTop="400dp"
         android:alpha="0" />
 
     <Button
@@ -167,7 +171,7 @@
         android:layout_width="55dp"
         android:layout_height="53dp"
         android:layout_marginLeft="915dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="525dp"
         android:alpha="0" />
 
     <Button
@@ -175,7 +179,7 @@
         android:layout_width="55dp"
         android:layout_height="53dp"
         android:layout_marginLeft="995dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="525dp"
         android:alpha="0" />
 
     <Button
@@ -183,7 +187,7 @@
         android:layout_width="55dp"
         android:layout_height="53dp"
         android:layout_marginLeft="1070dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="525dp"
         android:alpha="0" />
 
     <ImageView
@@ -191,7 +195,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="880dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="300dp"
         android:src="@drawable/page6_btn_small_bath" />
 
     <ImageView
@@ -199,7 +203,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="880dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="375dp"
         android:src="@drawable/page6_variation_of_colors_bathtub" />
 
     <ImageView
@@ -207,7 +211,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="950dp"
-        android:layout_marginTop="395dp"
+        android:layout_marginTop="380dp"
         android:src="@drawable/page6_hyoji" />
+	</FrameLayout>
+    <include layout="@layout/layout_navigation_bar" />
 
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+    
 </FrameLayout>

@@ -3,7 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="60dp">
     <ImageView
         android:id="@+id/page4_main"
         android:layout_width="match_parent"
@@ -90,5 +93,13 @@
         android:layout_marginLeft="1107dp"
         android:layout_marginTop="555dp"
         android:alpha="0" />
+    
+    </FrameLayout>
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+    
 
 </FrameLayout>

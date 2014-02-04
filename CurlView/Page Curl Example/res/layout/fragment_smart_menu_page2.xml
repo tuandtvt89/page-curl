@@ -1,42 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/page2_main" >
-    </ImageView>
-    
-    <ImageView 
-        android:id="@+id/imageKitchen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="837dp"
-        android:layout_marginTop="280dp"
-        android:src="@drawable/page2_btn_kitchen"/>
-	<Button 
-	    android:id="@+id/btnKitchen"
-	    android:layout_width="330dp"
-	    android:layout_height="50dp"
-	    android:layout_marginLeft="840dp"
-        android:layout_marginTop="280dp"
-        android:alpha="0"/>
-	
-	<ImageView 
-	    android:id="@+id/imageCupboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="837dp"
-        android:layout_marginTop="575dp"
-        android:src="@drawable/page2_btn_cupboard"/>
-	<Button 
-	    android:id="@+id/btnCupboard"
-	    android:layout_width="330dp"
-	    android:layout_height="50dp"
-	    android:layout_marginLeft="840dp"
-        android:layout_marginTop="575dp"
-        android:alpha="0"/>
+        android:layout_marginTop="60dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/page2_main" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageKitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="837dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/page2_btn_kitchen" />
+
+        <Button
+            android:id="@+id/btnKitchen"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="840dp"
+            android:layout_marginTop="280dp"
+            android:alpha="0" />
+
+        <ImageView
+            android:id="@+id/imageCupboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="837dp"
+            android:layout_marginTop="575dp"
+            android:src="@drawable/page2_btn_cupboard" />
+
+        <Button
+            android:id="@+id/btnCupboard"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="840dp"
+            android:layout_marginTop="575dp"
+            android:alpha="0" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+
 </FrameLayout>

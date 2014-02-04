@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp" >
+    <ImageView
+        android:id="@+id/imageSlideIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/page3_main_2" />
+
+    <Button
+        android:id="@+id/buttonColor1"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="515dp"/>
+
+    <Button
+        android:id="@+id/buttonColor2"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="521dp"/>
+
+    <Button
+        android:id="@+id/buttonColor3"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="521dp"/>
+
+    <Button
+        android:id="@+id/buttonColor4"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="521dp"/>
+
+    <ImageView
+        android:id="@+id/imageVariationOfSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/page3_size_variation" />
+
+    <ImageView
+        android:id="@+id/imageVariationOfColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/page3_variation_of_colors" />
+
+    <ImageView
+        android:id="@+id/imageHideButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="618dp"
+        android:src="@drawable/page3_btn_hidden" />
+
+    <ImageView
+        android:id="@+id/imageCurrentSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="505dp"
+        android:src="@drawable/page3_hyoji" />
+
+    <ImageView
+        android:id="@+id/imageCabinet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="335dp"
+        android:src="@drawable/page3_btn_kitchencloset" />
+
+    <Button
+        android:id="@+id/buttonCabinet"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="340dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageCookingHeater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/page3_btn_range" />
+
+    <ImageView
+        android:id="@+id/imageDishWasher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="715dp"
+        android:layout_marginTop="410dp"
+        android:src="@drawable/page3_btn_kansouki" />
+
+    <Button
+        android:id="@+id/buttonDishWasher"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="980dp"
+        android:layout_marginTop="410dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageRangeHood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/page3_btn_range_hood" />
+
+    <Button
+        android:id="@+id/buttonRangeHood"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="95dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="835dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/page3_btn_dairiseki" />
+
+    <Button
+        android:id="@+id/buttonBoard"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="975dp"
+        android:layout_marginTop="200dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageTileBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/page3_btn_kitchenboard" />
+
+    <Button
+        android:id="@+id/buttonTileBoard"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="180dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="620dp"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/page3_btn_suisen" />
+
+    <Button
+        android:id="@+id/buttonWater"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="975dp"
+        android:layout_marginTop="105dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageSink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="620dp"
+        android:layout_marginTop="306dp"
+        android:src="@drawable/page3_btn_sink" />
+
+    <Button
+        android:id="@+id/buttonsink"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="980dp"
+        android:layout_marginTop="310dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageallkitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/page3_btn_all_kitchen" />
+	<Button
+        android:id="@+id/buttonallkitchen"
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="600dp"
+        android:alpha="0"/>    
+
+    <Button
+        android:id="@+id/buttonCookingHeater"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="255dp"
+        android:alpha="0" />
+    </FrameLayout>
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+
+</FrameLayout>

@@ -1,13 +1,15 @@
 package com.rajaapps.pagecurl;
 
+import com.rajaapps.pagecurl.NavigationBarLayout.NavigationBarClickListener;
+
 import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
 
-public class Page10View extends FrameLayout {
+public class Page10View extends PageView {
 
-	public Page10View(Context context) {
-		super(context);
+	public Page10View(Context context, CurlView curlView) {
+		super(context, curlView);
 		// TODO Auto-generated constructor stub
 		initView();
 	}
@@ -15,5 +17,7 @@ public class Page10View extends FrameLayout {
 	private void initView() {
         View view = inflate(getContext(), R.layout.fragment_smart_menu_page10, null);
         addView(view);
+        setupIndex();
     }
+
 }

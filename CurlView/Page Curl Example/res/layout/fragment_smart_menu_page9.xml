@@ -3,63 +3,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-
-    <ImageView
-        android:id="@+id/page9_main"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/page9_main" />
+        android:layout_marginTop="60dp" >
 
-    <ImageView
-        android:id="@+id/page9_image_menu1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="350dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page9_btn_menu1_panorama" />
-    
-    <ImageView
-        android:id="@+id/page9_image_menu2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="450dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page9_btn_menu2_tv" />
-    
-    <ImageView
-        android:id="@+id/page9_image_menu3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="550dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page9_btn_menu3_door" />
-    
-    <Button
-        android:id="@+id/page9_btn_menu1"
-        android:layout_width="330dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="350dp"
-        android:alpha="0" />
-    
-    <Button
-        android:id="@+id/page9_btn_menu2"
-        android:layout_width="330dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="450dp"
-        android:alpha="0" />
-    
-    <Button
-        android:id="@+id/page9_btn_menu3"
-        android:layout_width="330dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="550dp"
-        android:alpha="0" />
-    
+        <ImageView
+            android:id="@+id/page9_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/page9_main" />
+
+        <ImageView
+            android:id="@+id/page9_image_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="350dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page9_btn_menu1_panorama" />
+
+        <ImageView
+            android:id="@+id/page9_image_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="450dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page9_btn_menu2_tv" />
+
+        <ImageView
+            android:id="@+id/page9_image_menu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="550dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page9_btn_menu3_door" />
+
+        <Button
+            android:id="@+id/page9_btn_menu1"
+            android:layout_width="330dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="350dp"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/page9_btn_menu2"
+            android:layout_width="330dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="450dp"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/page9_btn_menu3"
+            android:layout_width="330dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="550dp"
+            android:alpha="0" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+
 </FrameLayout>

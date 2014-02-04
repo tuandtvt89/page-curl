@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/page19_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/page19_main" />
+
+    <ImageView
+        android:id="@+id/imageHanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="669dp"
+        android:layout_marginTop="418dp"
+        android:src="@drawable/page19_btn_hanger_type" />
+    
+    <Button
+        android:id="@+id/buttonHanger"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="669dp"
+        android:layout_marginTop="418dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageHanger_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="669dp"
+        android:layout_marginTop="458dp"
+        android:src="@drawable/page19_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imageChudan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="936dp"
+        android:layout_marginTop="418dp"
+        android:src="@drawable/page19_btn_chudan_type" />
+    
+    <Button
+        android:id="@+id/buttonChudan"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="936dp"
+        android:layout_marginTop="418dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageChudan_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="936dp"
+        android:layout_marginTop="458dp"
+        android:src="@drawable/page19_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imagePage19_System"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="570dp"
+        android:src="@drawable/page19_btn_system_closet" />
+    
+    <Button
+        android:id="@+id/buttonPage19_System"
+        android:layout_width="353dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="570dp"
+        android:alpha="0" />
+    
+</FrameLayout>

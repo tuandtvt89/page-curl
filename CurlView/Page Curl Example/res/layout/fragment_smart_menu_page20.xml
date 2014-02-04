@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/dummy_smart_page15_background" />
+
+<ImageView
+    android:id="@+id/imageShoesWallVariation"
+    android:layout_width="334dp"
+    android:layout_height="80dp"
+    android:layout_gravity="left"
+    android:layout_marginLeft="70dp"
+    android:layout_marginTop="620dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/dummy_smart_page15_shoeswallvariation" />
+
+</FrameLayout>

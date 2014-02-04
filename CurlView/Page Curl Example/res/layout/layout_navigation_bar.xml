@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rajaapps.pagecurl.NavigationBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigationBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/headerBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/page1_header" />
+
+    <ImageView
+        android:id="@+id/imageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/page1_title" />
+
+    <TextView
+        android:id="@+id/textPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingRight="30dp"
+        android:text="5/14"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/page1_btn_ismart" />
+
+    <ImageView
+        android:id="@+id/buttonIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="105dp"
+        android:src="@drawable/page2_btn_mokuji" />
+
+</com.rajaapps.pagecurl.NavigationBarLayout>

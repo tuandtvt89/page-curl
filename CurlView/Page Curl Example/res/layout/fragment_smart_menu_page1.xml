@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+    
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp" >
 
         <ImageView
             android:id="@+id/imageTitle"
@@ -31,8 +32,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="75dp"
             android:layout_marginTop="110dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_lavatory"
@@ -50,8 +50,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="245dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_closet"
@@ -69,8 +68,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="65dp"
             android:layout_marginTop="380dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_kitchen"
@@ -88,8 +86,7 @@
             android:layout_height="90dp"
             android:layout_marginLeft="960dp"
             android:layout_marginTop="180dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_living_stair"
@@ -106,8 +103,7 @@
             android:layout_height="90dp"
             android:layout_marginLeft="952dp"
             android:layout_marginTop="340dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_entrance"
@@ -125,8 +121,7 @@
               android:layout_height="80dp"
               android:layout_marginLeft="960dp"
               android:layout_marginTop="480dp"
-              android:alpha="0"
-              android:background="@android:color/white"  />
+              android:alpha="0"/>
 
         <ImageView
             android:id="@+id/image_wamodern_room"
@@ -144,8 +139,13 @@
             android:layout_height="80dp"
             android:layout_marginLeft="65dp"
             android:layout_marginTop="530dp"
-            android:alpha="0"
-            android:background="@android:color/white"  />
+            android:alpha="0"/>
     </FrameLayout>
+    
+    <include layout="@layout/layout_navigation_bar" />
 
-</LinearLayout>
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+
+</FrameLayout>

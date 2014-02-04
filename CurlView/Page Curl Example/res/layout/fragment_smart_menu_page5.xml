@@ -2,11 +2,21 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="60dp">
     <ImageView
         android:id="@+id/imageSlideIndicator"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/page5_main" />
+    </FrameLayout>
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
+    
 </FrameLayout>

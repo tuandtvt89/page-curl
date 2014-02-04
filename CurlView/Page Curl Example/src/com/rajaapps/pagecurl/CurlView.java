@@ -35,7 +35,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 	// Shows two pages side by side.
 	public static final int SHOW_TWO_PAGES = 2;
 
-	private boolean mAllowLastPageCurl = true;
+	private boolean mAllowLastPageCurl = false;
 
 	private boolean mAnimate = false;
 	private long mAnimationDurationTime = 300;
@@ -86,14 +86,17 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 	private float endTouchPointX;
 	private float borderPadding = 80;
 	private int screenWidth;
+	private boolean isCancelFlip = false;
 	//	end anh.nguyenquynh
 	/**
 	 * Default constructor.
 	 */
 	
 	//anh.nguyenquynh
-	private FrameLayout[] pageList = {new Page1View(getContext(), this), new Page2View(getContext()),
-			new Page3View(getContext()), new Page4View(getContext()), new Page5View(getContext())
+	private FrameLayout[] pageList = {new Page1View(getContext(), this), new Page2View(getContext(), this),
+			new Page3View(getContext(), this), new Page4View(getContext(), this), new Page5View(getContext(), this),
+			new Page6View(getContext(), this), new Page7View(getContext(), this), new Page8View(getContext(), this),
+			new Page9View(getContext(), this), new Page10View(getContext(), this), new Page11View(getContext(), this),
 	};
 	
 	public CurlView(Context context, FrameLayout pageContent, Activity activity) {
@@ -101,6 +104,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 		init(context);
 		this.pageContent = pageContent;
 		this.activity = activity;
+		isFipping = false;
 	}
 	//end anh.nguyenquynh
 	
@@ -154,7 +158,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 	@Override
 	public void onDrawFrame() {
 		// We are not animating.
-		if (mAnimate == false) {
+		if (mAnimate == false) {			
 			return;
 		}
 
@@ -172,21 +176,41 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 				mPageCurl = curl;
 				mPageRight = right;
 				// If we were curling left page update current index.
-				if (mCurlState == CURL_LEFT) {
+//				if (mCurlState == CURL_LEFT) {
+//					if ( mCurrentIndex > 0 )
+//					--mCurrentIndex;		
+//					else return;
+//				}
+				if ( mCurlState == CURL_LEFT ) {
+					if ( mCurrentIndex >= 0 && mCurrentIndex < pageList.length ) {
+						((PageView)pageList[mCurrentIndex]).removeIndexView();
+					}
 					--mCurrentIndex;
 					//anh.nguyenquynh
+					pageContent.post(new Runnable() {
+						int index = getCurrentIndex();					
+						@Override
+						public void run() {
+							// TODO Auto-generated method stub
+							if ( index >= 0 && index < pageList.length ) {
+								pageContent.removeAllViews();
+								pageContent.addView(pageList[index]);
+								pageContent.setVisibility(View.VISIBLE);
+							}
+						}
+					});
+				}
+				else {
 					this.activity.runOnUiThread(new Runnable() {
 						
 						@Override
 						public void run() {
 							// TODO Auto-generated method stub
-							pageContent.removeAllViews();
-							pageContent.addView(pageList[getCurrentIndex()]);
 							pageContent.setVisibility(View.VISIBLE);
 						}
-					});
-					//	end anh.nguyenquynh
+					});					
 				}
+				//	end anh.nguyenquynh
 			} else if (mAnimationTargetEvent == SET_CURL_TO_LEFT) {
 				// Switch curled page to left.
 				CurlMesh left = mPageCurl;
@@ -201,22 +225,44 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 				mPageCurl = curl;
 				mPageLeft = left;
 				// If we were curling right page update current index.
+//				if (mCurlState == CURL_RIGHT) {
+//					if ( mCurrentIndex < pageList.length-1 ) 
+//						++mCurrentIndex;					
+//					else return;
+//				}
 				if (mCurlState == CURL_RIGHT) {
+					if ( mCurrentIndex >= 0 && mCurrentIndex < pageList.length ) {
+						((PageView)pageList[mCurrentIndex]).removeIndexView();
+					}
 					++mCurrentIndex;
-					//	anh.nguyenquynh
-					this.activity.runOnUiThread(new Runnable() {						
+	//				anh.nguyenquynh
+					pageContent.post(new Runnable() {		
+						int index = getCurrentIndex();
 						@Override
 						public void run() {
 							// TODO Auto-generated method stub
-							pageContent.removeAllViews();
-							pageContent.addView(pageList[getCurrentIndex()]);
-							pageContent.setVisibility(View.VISIBLE);
+							if ( index >= 0 && index < pageList.length ) {
+								pageContent.removeAllViews();
+								pageContent.addView(pageList[index]);
+								pageContent.setVisibility(View.VISIBLE);
+							}
 						}
 					});
-					//	end anh.nguyenquynh
 				}
+				else {
+					this.activity.runOnUiThread(new Runnable() {
+						
+						@Override
+						public void run() {
+							// TODO Auto-generated method stub
+							pageContent.setVisibility(View.VISIBLE);
+						}
+					});					
+				}
+				//	end anh.nguyenquynh
 			}
 			mCurlState = CURL_NONE;
+			
 			mAnimate = false;
 			requestRender();
 		} else {
@@ -256,36 +302,46 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 		mPageCurl.resetTexture();
 	}
 	
-	public void switchToPage(int pageIndex, int curlType) {	
-		
-//		switch(curlType) {
-//			case CURL_LEFT:
-//				updatePage(mPageRight.getTexturePage(), pageIndex);
-//				break;
-//			case CURL_RIGHT:
-//				mRenderer.removeCurlMesh(mPageLeft);
-//				mRenderer.removeCurlMesh(mPageRight);
-//				mRenderer.removeCurlMesh(mPageCurl);
-//
-//				// We are curling right page.
-//				CurlMesh curl = mPageRight;
-//				mPageRight = mPageCurl;
-//				mPageCurl = curl;
-//				updatePage(mPageRight.getTexturePage(), pageIndex);
-//				break;
-//		}
-		//setCurrentIndex(pageIndex);
-		this.activity.runOnUiThread(new Runnable() {
+	public void switchToPage(final int pageIndex, int curlType) {			
+			
+		pageContent.post(new Runnable() {
 			
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
+				// TODO Auto-generated method stub	
 				pageContent.removeAllViews();
-				pageContent.addView(pageList[getCurrentIndex()]);
-				pageContent.setVisibility(View.VISIBLE);
+				pageContent.addView(pageList[pageIndex]);
 			}
 		});
-
+		
+		switch (curlType) {
+			case SET_CURL_TO_RIGHT:
+				CurlMesh right = mPageCurl;
+				CurlMesh curlRight = mPageRight;
+				right.setRect(mRenderer.getPageRect(CurlRenderer.PAGE_RIGHT));
+				right.setFlipTexture(false);
+				right.reset();
+				mRenderer.removeCurlMesh(curlRight);
+				mPageCurl = curlRight;
+				mPageRight = right;
+				setCurrentIndex(pageIndex);
+				break;
+			case SET_CURL_TO_LEFT:
+				CurlMesh left = mPageCurl;
+				CurlMesh curlLeft = mPageLeft;
+				left.setRect(mRenderer.getPageRect(CurlRenderer.PAGE_LEFT));
+				left.setFlipTexture(true);
+				left.reset();
+				mRenderer.removeCurlMesh(curlLeft);
+				if (!mRenderLeftPage) {
+					mRenderer.removeCurlMesh(left);
+				}
+				mPageCurl = curlLeft;
+				mPageLeft = left;
+				setCurrentIndex(pageIndex);
+				break;
+		}
+		
 	}
 
 	@Override
@@ -296,6 +352,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 			return false;
 		}
 
+		Display display = this.activity.getWindowManager().getDefaultDisplay();	
 		// We need page rects quite extensively so get them for later use.
 		RectF rightRect = mRenderer.getPageRect(CurlRenderer.PAGE_RIGHT);
 		RectF leftRect = mRenderer.getPageRect(CurlRenderer.PAGE_LEFT);
@@ -316,8 +373,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 			// right or left edge of page and that'll be the position from where
 			// user is holding the paper to make curl happen.
 			
-			startTouchPointX = me.getX();
-			Display display = this.activity.getWindowManager().getDefaultDisplay();			
+			startTouchPointX = me.getX();				
 			if ( startTouchPointX < (display.getWidth() - borderPadding) && startTouchPointX > borderPadding )
 				return true;
 			
@@ -396,7 +452,14 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 		case MotionEvent.ACTION_CANCEL:
 		case MotionEvent.ACTION_UP: {
 			isFipping = false;
+			currentTouchPointX = me.getX();
+			if ( currentTouchPointX > display.getWidth()/2 ) {
+				isCancelFlip = true;
+			}
+			if ( startTouchPointX < (display.getWidth() - borderPadding) && startTouchPointX > borderPadding )
+				return true;
 			
+			//if ( Math.abs(currentTouchPointX - startTouchPointX) < 10 ) return true;
 			if (mCurlState == CURL_LEFT || mCurlState == CURL_RIGHT) {
 				// Animation source is the point from where animation starts.
 				// Also it's handled in a way we actually simulate touch events

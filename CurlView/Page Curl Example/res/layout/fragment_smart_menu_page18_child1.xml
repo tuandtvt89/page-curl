@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/page18_sw1_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:paddingTop="70dp"  
+        android:src="@drawable/page18_sw1_main1"/>
+
+    <Button
+        android:id="@+id/page18_sw1_variation1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="650dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page18_sw1_variation2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="480dp"
+        android:layout_marginTop="650dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page18_sw1_variation3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="650dp"
+        android:layout_marginTop="650dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page18_sw1_variation4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="800dp"
+        android:layout_marginTop="650dp"
+        android:alpha="0" />
+
+    
+
+</FrameLayout>

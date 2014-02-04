@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+      <ImageView
+          android:id="@+id/page18_main"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/page18_main2" />
+
+    <ImageView
+        android:id="@+id/imageNonSlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="607dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/page18_btn_nonslide" />
+    
+    <Button
+        android:id="@+id/buttonNonSlide"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="615dp"
+        android:layout_marginTop="280dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageNonSlide_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="607dp"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/page18_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imageSlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="910dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/page18_btn_slide_type" />
+    
+    <Button
+        android:id="@+id/buttonSlide"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="280dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageSlide_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="911dp"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/page18_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imageBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="610dp"
+        android:layout_marginTop="580dp"
+        android:src="@drawable/page18_btn_book_type" />
+    
+    <Button
+        android:id="@+id/buttonBook"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="615dp"
+        android:layout_marginTop="580dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageBook_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="611dp"
+        android:layout_marginTop="620dp"
+        android:src="@drawable/page18_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imageWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="910dp"
+        android:layout_marginTop="580dp"
+        android:src="@drawable/page18_btn_walkin_closet" />
+    
+    <Button
+        android:id="@+id/buttonWalk"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="580dp"
+        android:alpha="0" />
+    
+    <ImageView
+        android:id="@+id/imageWalk_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="911dp"
+        android:layout_marginTop="620dp"
+        android:src="@drawable/page18_btn_size_variation" />
+    
+    <ImageView
+        android:id="@+id/imageCloset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/page18_btn_totalcloset" />
+    
+    <Button
+        android:id="@+id/buttonCloset"
+        android:layout_width="400dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="500dp"
+        android:alpha="0" />
+
+</FrameLayout>

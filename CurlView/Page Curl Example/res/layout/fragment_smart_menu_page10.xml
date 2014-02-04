@@ -3,121 +3,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/page10_main"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/page10_main_2" />
+        android:layout_marginTop="60dp" >
 
-    <ImageView
-        android:id="@+id/page10_image_windows"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="70dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page10_btn_panorama_window" />
+        <ImageView
+            android:id="@+id/page10_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/page10_main_1" />
 
-    <Button
-        android:id="@+id/page10_btn_windows"
-        android:layout_width="245dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="70dp"
-        android:alpha="0" />
+        <ImageView
+            android:id="@+id/page10_image_windows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page10_btn_panorama_window" />
 
-    <ImageView
-        android:id="@+id/page10_image_hiden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="65dp"
-        android:layout_marginTop="635dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page10_btn_hidden" />
+        <Button
+            android:id="@+id/page10_btn_windows"
+            android:layout_width="245dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="70dp"
+            android:alpha="0" />
 
-    <ImageView
-        android:id="@+id/imageAllEntrance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="940dp"
-        android:layout_marginTop="540dp"
-        android:src="@drawable/page10_btn_all_entrance" />
+        <ImageView
+            android:id="@+id/page10_image_hiden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="635dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page10_btn_hidden" />
 
-    <Button
-        android:id="@+id/buttonAllEntrance"
-        android:layout_width="280dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="950dp"
-        android:layout_marginTop="540dp"
-        android:alpha="0" />
+        <ImageView
+            android:id="@+id/imageAllEntrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="940dp"
+            android:layout_marginTop="540dp"
+            android:src="@drawable/page10_btn_all_entrance" />
 
-    <Button
-        android:id="@+id/page10_btn_hiden"
-        android:layout_width="265dp"
-        android:layout_height="45dp"
-        android:layout_gravity="right"
-        android:layout_marginRight="65dp"
-        android:layout_marginTop="635dp"
-        android:alpha="0" />
+        <Button
+            android:id="@+id/buttonAllEntrance"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="950dp"
+            android:layout_marginTop="540dp"
+            android:alpha="0" />
 
-    <ImageView
-        android:id="@+id/page10_imageVariationColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="560dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page10_variation_of_colors" />
+        <Button
+            android:id="@+id/page10_btn_hiden"
+            android:layout_width="265dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="635dp"
+            android:alpha="0" />
 
-    <ImageView
-        android:id="@+id/page10_imageCurrentColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="568dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/page10_hyoji" />
+        <ImageView
+            android:id="@+id/page10_imageVariationColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="560dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page10_variation_of_colors" />
 
-    <Button
-        android:id="@+id/page10_buttoncolor1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="590dp"
-        android:alpha="0" />
+        <ImageView
+            android:id="@+id/page10_imageCurrentColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="568dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page10_hyoji" />
 
-    <Button
-        android:id="@+id/page10_buttoncolor2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginTop="590dp"
-        android:alpha="0" />
+        <Button
+            android:id="@+id/page10_buttoncolor1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="590dp"
+            android:alpha="0" />
 
-    <Button
-        android:id="@+id/page10_buttoncolor3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="208dp"
-        android:layout_marginTop="590dp"
-        android:alpha="0" />
+        <Button
+            android:id="@+id/page10_buttoncolor2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="590dp"
+            android:alpha="0" />
 
-    <Button
-        android:id="@+id/page10_buttoncolor4"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="268dp"
-        android:layout_marginTop="590dp"
-        android:alpha="0" />
+        <Button
+            android:id="@+id/page10_buttoncolor3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="590dp"
+            android:alpha="0" />
 
-    <Button
-        android:id="@+id/page10_buttoncolor5"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="330dp"
-        android:layout_marginTop="590dp"
-        android:alpha="0" />
+        <Button
+            android:id="@+id/page10_buttoncolor4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="590dp"
+            android:alpha="0" />
+
+        <Button
+            android:id="@+id/page10_buttoncolor5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="590dp"
+            android:alpha="0" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_navigation_bar" />
+
+    <include
+        android:id="@+id/viewIndex"
+        layout="@layout/layout_index_view" />
 
 </FrameLayout>

@@ -1,16 +1,18 @@
 package com.rajaapps.pagecurl;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.FrameLayout.LayoutParams;
 
-public class Page3View extends FrameLayout {
+import com.rajaapps.pagecurl.NavigationBarLayout.NavigationBarClickListener;
 
-	public Page3View(Context context) {
-		super(context);
+public class Page3View extends PageView {
+
+	public Page3View(Context context, CurlView curlView) {
+		super(context, curlView);
 		// TODO Auto-generated constructor stub
 		initView();
 	}
@@ -50,6 +52,20 @@ public class Page3View extends FrameLayout {
                 LayoutParams l = (LayoutParams) currentSelectedImage.getLayoutParams();
                 l.leftMargin = 146;
                 currentSelectedImage.setLayoutParams(l);
+                final int[] mBitmapIds = { R.layout.fragment_smart_menu_page1, R.layout.fragment_smart_menu_page2,
+                		R.layout.fragment_smart_menu_page3_color1, R.layout.fragment_smart_menu_page4, R.layout.fragment_smart_menu_page5,
+                		R.layout.fragment_smart_menu_page6, R.layout.fragment_smart_menu_page7, R.layout.fragment_smart_menu_page8,
+                		R.layout.fragment_smart_menu_page9, R.layout.fragment_smart_menu_page10, R.layout.fragment_smart_menu_page11};
+                ((Activity)getContext()).runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+		                getCurlView().setPageProvider(new PageProvider((Activity)getContext(), mBitmapIds));
+		                getCurlView().setCurrentIndex(2);
+					}
+				});
+
             }
         });
         Button color3Button = (Button) rootView.findViewById(R.id.buttonColor3);
@@ -62,6 +78,18 @@ public class Page3View extends FrameLayout {
                 LayoutParams l = (LayoutParams) currentSelectedImage.getLayoutParams();
                 l.leftMargin = 206;
                 currentSelectedImage.setLayoutParams(l);
+                final int[] mBitmapIds = { R.layout.fragment_smart_menu_page1, R.layout.fragment_smart_menu_page2,
+                		R.layout.fragment_smart_menu_page3_color2, R.layout.fragment_smart_menu_page4, R.layout.fragment_smart_menu_page5,
+                		R.layout.fragment_smart_menu_page6, R.layout.fragment_smart_menu_page7, R.layout.fragment_smart_menu_page8,
+                		R.layout.fragment_smart_menu_page9, R.layout.fragment_smart_menu_page10, R.layout.fragment_smart_menu_page11};
+				((Activity)getContext()).runOnUiThread(new Runnable() {									
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+		                getCurlView().setPageProvider(new PageProvider((Activity)getContext(), mBitmapIds));
+		                getCurlView().setCurrentIndex(2);
+					}
+				});
             }
         });
 
@@ -75,13 +103,22 @@ public class Page3View extends FrameLayout {
                 LayoutParams l = (LayoutParams) currentSelectedImage.getLayoutParams();
                 l.leftMargin = 266;
                 currentSelectedImage.setLayoutParams(l);
+                final int[] mBitmapIds = { R.layout.fragment_smart_menu_page1, R.layout.fragment_smart_menu_page2,
+                		R.layout.fragment_smart_menu_page3_color3, R.layout.fragment_smart_menu_page4, R.layout.fragment_smart_menu_page5,
+                		R.layout.fragment_smart_menu_page6, R.layout.fragment_smart_menu_page7, R.layout.fragment_smart_menu_page8,
+                		R.layout.fragment_smart_menu_page9, R.layout.fragment_smart_menu_page10, R.layout.fragment_smart_menu_page11};
+                ((Activity)getContext()).runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						getCurlView().setPageProvider(new PageProvider((Activity)getContext(), mBitmapIds));
+						getCurlView().setCurrentIndex(2);
+					}
+				});
             }
         });
         addView(rootView);
+        setupIndex();
     }
-	
-	
-
-	
-
 }
