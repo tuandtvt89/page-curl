@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/page10_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/page8_main1" />
+
+    <Button
+        android:id="@+id/buttonShelf"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="130dp"
+        android:alpha="0" />
+
+     <ImageView
+        android:id="@+id/imageMirror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="940dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/page8_btn_mirror" />
+
+     <Button
+         android:id="@+id/buttonMirror"
+         android:layout_width="280dp"
+         android:layout_height="70dp"
+         android:layout_marginLeft="940dp"
+         android:layout_marginTop="60dp"
+         android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="620dp"
+        android:layout_marginTop="430dp"
+        android:src="@drawable/page8_btn_counter" />
+
+     <Button
+         android:id="@+id/buttonCounter"
+         android:layout_width="221dp"
+         android:layout_height="70dp"
+         android:layout_marginLeft="980dp"
+         android:layout_marginTop="440dp"
+         android:alpha="0" />
+     
+    <ImageView
+        android:id="@+id/imageAllDresser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="960dp"
+        android:layout_marginTop="540dp"
+        android:src="@drawable/page8_btn_all_dresser" />
+
+     <Button
+         android:id="@+id/buttonAllDresser"
+         android:layout_width="221dp"
+         android:layout_height="70dp"
+         android:layout_marginLeft="960dp"
+         android:layout_marginTop="540dp"
+         android:alpha="0" />
+     <ImageView
+        android:id="@+id/imageDresscloset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/page8_btn_dresser_closet" />
+
+     <Button
+         android:id="@+id/buttonDressCloset"
+         android:layout_width="300dp"
+         android:layout_height="70dp"
+         android:layout_marginLeft="60dp"
+         android:layout_marginTop="60dp"
+         android:alpha="0" />
+     
+
+    <ImageView
+        android:id="@+id/imageDresserPattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="510dp"
+        android:src="@drawable/page8_btn_dresser_pattern" />
+
+</FrameLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <ImageView
+        android:id="@+id/page6_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/page6_main_1" />
+
+    <ImageView
+        android:id="@+id/imageHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="630dp"
+        android:src="@drawable/page6_btn_hidden" />
+
+    <ImageView
+        android:id="@+id/imageShower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="485dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/page6_btn_shower" />
+
+    <Button
+        android:id="@+id/buttonShower"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="575dp"
+        android:layout_marginTop="110dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageAllBath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/page6_btn_all_bath" />
+
+    <Button
+        android:id="@+id/buttonAllBath"
+        android:layout_width="257dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="900dp"
+        android:layout_marginTop="205dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageBlind_page6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/page6_btn_blind" />
+
+    <Button
+        android:id="@+id/buttonBlind_page6"
+        android:layout_width="262dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="220dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageOtherBathRoom_page6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/page6_btn_other_bathroom" />
+
+    <Button
+        android:id="@+id/buttonOtherBathRoom_page6"
+        android:layout_width="262dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="545dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/page6_btn_counter" />
+
+    <Button
+        android:id="@+id/buttonCounter"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="575dp"
+        android:layout_marginTop="230dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageBathtub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/page6_btn_bathtub" />
+
+    <Button
+        android:id="@+id/buttonBathtub"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="450dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="545dp"
+        android:layout_marginTop="570dp"
+        android:src="@drawable/page6_btn_floor" />
+
+    <Button
+        android:id="@+id/buttonFloor"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="545dp"
+        android:layout_marginTop="570dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageTileVariation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="510dp"
+        android:src="@drawable/page6_variation_of_colors_tile" />
+
+    <ImageView
+        android:id="@+id/imageTileHoHyji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="515dp"
+        android:src="@drawable/page6_hyoji" />
+
+    <Button
+        android:id="@+id/page6_buttonColor1_1"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="415dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page6_buttonColor1_2"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="1030dp"
+        android:layout_marginTop="415dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page6_buttonColor2_1"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="535dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page6_buttonColor2_2"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="995dp"
+        android:layout_marginTop="535dp"
+        android:alpha="0" />
+
+    <Button
+        android:id="@+id/page6_buttonColor2_3"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="1070dp"
+        android:layout_marginTop="535dp"
+        android:alpha="0" />
+
+    <ImageView
+        android:id="@+id/imageSmallBathVariation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="320dp"
+        android:src="@drawable/page6_btn_small_bath" />
+
+    <ImageView
+        android:id="@+id/imageBathtubvariation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="880dp"
+        android:layout_marginTop="390dp"
+        android:src="@drawable/page6_variation_of_colors_bathtub" />
+
+    <ImageView
+        android:id="@+id/imageBathtubHyoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="950dp"
+        android:layout_marginTop="395dp"
+        android:src="@drawable/page6_hyoji" />
+
+</FrameLayout>

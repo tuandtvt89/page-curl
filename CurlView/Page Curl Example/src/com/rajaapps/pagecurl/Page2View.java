@@ -17,6 +17,4 @@ public class Page2View extends FrameLayout {
         addView(view);
     }
 
-	
-
 }

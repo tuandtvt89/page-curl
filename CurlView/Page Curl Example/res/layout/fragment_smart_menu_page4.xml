@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageView
+        android:id="@+id/page4_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/page4_main2" />
+
+    <ImageView
+        android:id="@+id/imageCupboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="240dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page4_btn_cupboard" />
+    
+    <ImageView
+        android:id="@+id/imageCupboardPattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page4_btn_cupboard_pattern" />
+    
+    <ImageView
+        android:id="@+id/imageVariationColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="520dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page4_variation_of_colors" />
+    
+    <ImageView
+        android:id="@+id/imageCurrentColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="892dp"
+        android:layout_marginTop="533dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/page4_hyoji" />
+    
+    <Button
+        android:id="@+id/buttonCupboard"
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="240dp"
+        android:alpha="0" />
+    
+    <Button
+        android:id="@+id/page4_buttoncolor1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="895dp"
+        android:layout_marginTop="555dp"
+        android:alpha="0" />
+    
+    <Button
+        android:id="@+id/page4_buttoncolor2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="965dp"
+        android:layout_marginTop="555dp"
+        android:alpha="0" />
+    
+    <Button
+        android:id="@+id/page4_buttoncolor3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="1037dp"
+        android:layout_marginTop="555dp"
+        android:alpha="0" />
+    
+    <Button
+        android:id="@+id/page4_buttoncolor4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="1107dp"
+        android:layout_marginTop="555dp"
+        android:alpha="0" />
+
+</FrameLayout>
